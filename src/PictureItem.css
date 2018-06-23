@@ -4,7 +4,7 @@
   transition: 200ms ease;
 }
 .PictureItem:hover {
-  box-shadow: 0 0 10px 2px #B7B7B7;
+  box-shadow: 0 0 10px 2px var(--col-effect);
 }
 .PictureItem-picture {
   overflow: hidden;
@@ -17,8 +17,8 @@
   object-fit: cover;
 }
 .PictureItem-text {
-  background-color: #C5C5C5;
-  color: #5B774D;
+  background-color: var(--col-bg-item);
+  color: var(--col-font-item);
   flex: 0 1 25%;
 }
 .PictureItem-title {

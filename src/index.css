@@ -3,3 +3,11 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+:root {
+  --col-bg-head:   #D4D4D4;
+  --col-bg-item:   #C5C5C5;
+  --col-bg-main:   #E4E4E4;
+  --col-effect:    #B7B7B7;
+  --col-font-alt:  #80535C;
+  --col-font-item: #5B774D;
+}
