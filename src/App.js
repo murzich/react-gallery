@@ -26,7 +26,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to the Tapes list</h1>
-          <button className="App-button" type="button" onClick={this.changeOrientation} aria-controls="button">
+          <button className="App-button" type="button" onClick={this.changeOrientation}>
             <img src={grid} alt="Change orientation"/>
           </button>
         </header>

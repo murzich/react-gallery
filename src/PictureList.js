@@ -25,7 +25,6 @@ class PictureList extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const PictureCollection = this.state.pictures.map(
       (picture) => { return (
         <PictureItem key={picture.id.toString()}
