@@ -1,38 +1,38 @@
 [
   {
     "id": 0,
-    "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "img": "./mock-img/BASF Lineup.jpg",
+    "title": "BASF Lineup",
     "description": "Lorem ipsum"
   },
   {
     "id": 1,
-    "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "img": "./mock-img/Maxell Chrome.jpg",
+    "title": "Maxell Chrome",
     "description": "Lorem ipsum"
   },
   {
     "id": 2,
     "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "title": "Memorex",
     "description": "Lorem ipsum"
   },
   {
     "id": 3,
-    "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "img": "./mock-img/Oldies.jpg",
+    "title": "Oldies",
     "description": "Lorem ipsum"
   },
   {
     "id": 4,
-    "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "img": "./mock-img/Scotch Dynarange.jpg",
+    "title": "Scotch Dynarange",
     "description": "Lorem ipsum"
   },
   {
     "id": 5,
-    "img": "./mock-img/Memorex.jpg",
-    "title": "Title of image",
+    "img": "./mock-img/Sony Lineup.jpg",
+    "title": "Sony Lineup",
     "description": "Lorem ipsum"
   }
 ]
