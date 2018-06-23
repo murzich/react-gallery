@@ -1,0 +1,10 @@
+.picture__list {
+    border: red;
+    display: grid;
+}
+.picture__list.portrait {
+    grid-template: 300px 300px / 300px 300px 300px;
+}
+.picture__list.landscape {
+    grid-template: 200px 200px 200px / 450px 450px;
+}
