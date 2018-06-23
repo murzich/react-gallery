@@ -1,10 +1,14 @@
-.picture__list {
-    border: red;
-    display: grid;
+.PictureList {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
 }
-.picture__list.portrait {
-    grid-template: 300px 300px / 300px 300px 300px;
+.PictureList.portrait {
+  grid-template: 300px 300px / 1fr 1fr 1fr;
 }
-.picture__list.landscape {
-    grid-template: 200px 200px 200px / 450px 450px;
+.PictureList.landscape {
+  grid-template: 200px 200px 200px / 1fr 1fr;
 }

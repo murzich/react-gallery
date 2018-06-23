@@ -1,34 +1,37 @@
-.item {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+.PictureItem {
+  position: relative;
+  overflow: hidden;
+  transition: 200ms ease;
 }
-.picture {
-    overflow: hidden;
+.PictureItem:hover {
+  box-shadow: 0 0 10px 2px #B7B7B7;
 }
-.image {
-    min-width: 100%;
-    min-height: 100%;
+.PictureItem-picture {
+  overflow: hidden;
+  object-fit: contain;
+  flex: 1 0 50%;
 }
-.text {
-    background: rgba(128, 128, 128, 0.5);
-    /* TODO: check if this is passing to children */
-    text-overflow: ellipsis;
+.PictureItem-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.picture__title {
-    font-size: 16px;
+.PictureItem-text {
+  background-color: #C5C5C5;
+  color: #5B774D;
+  flex: 0 1 25%;
 }
-.picture__description {
-    font-size: 12px;
+.PictureItem-title {
+  font-size: 16px;
 }
-.item.portrait {
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 50%;
+.PictureItem-description {
+  font-size: 12px;
 }
-.item.landscape {
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 50%;
+.PictureItem.portrait {
+  display: flex;
+  flex-direction: column;
+}
+.PictureItem.landscape {
+  display: flex;
+  flex-direction: row;
 }

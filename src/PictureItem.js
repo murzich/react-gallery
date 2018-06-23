@@ -2,16 +2,16 @@ import React from 'react';
 import './PictureItem.css';
 
 function PictureItem (props) {
-  const itemClass = `item ${props.orientation}`;
+  const itemClass = `PictureItem ${props.orientation}`;
 
   return (
     <div className={itemClass}>
-      <div className="picture">
-        <img src={props.image} alt="img" className="image"/>
+      <div className="PictureItem-picture">
+        <img src={props.image} alt="img" className="PictureItem-image"/>
       </div>
-      <div className="text">
-        <h2 className="picture__title">{props.title}</h2>
-        <p className="picture__description">{props.description}</p>
+      <div className="PictureItem-text">
+        <h2 className="PictureItem-title">{props.title}</h2>
+        <p className="PictureItem-description">{props.description}</p>
       </div>
     </div>
   )

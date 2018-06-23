@@ -36,7 +36,7 @@ class PictureList extends React.Component {
         />
       )}
     );
-    const className = `picture__list ${this.props.orientation}`;
+    const className = `PictureList ${this.props.orientation}`;
     return (
       <div className={className}>
         {PictureCollection}
