@@ -20,24 +20,27 @@ class PictureList extends React.Component {
     });
   }
 
+  // TODO: Do move getting data to parent App component?
   componentWillMount() {
     this.getPictures();
   }
 
   render() {
+    const { orientation } = this.props;
     const PictureCollection = this.state.pictures.map(
-      (picture) => { return (
-        <PictureItem key={picture.id.toString()}
-                     orientation={this.props.orientation}
-                     image={picture.img}
-                     title={picture.title}
-                     description={picture.description}
-        />
-      )}
+      ({ id, img, title, description }) => {
+        return (
+          <PictureItem key={id.toString()}
+                       orientation={orientation}
+                       image={img}
+                       title={title}
+                       description={description}
+          />
+        )}
     );
-    const className = `PictureList ${this.props.orientation}`;
+
     return (
-      <div className={className}>
+      <div className={`PictureList ${orientation}`}>
         {PictureCollection}
       </div>
     );
