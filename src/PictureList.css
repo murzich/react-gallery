@@ -5,10 +5,21 @@
   margin: 0 auto;
   padding: 1rem;
   position: relative;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
 }
 .PictureList.portrait {
   grid-template: 300px 300px / 1fr 1fr 1fr;
 }
 .PictureList.landscape {
   grid-template: 200px 200px 200px / 1fr 1fr;
+}
+.PictureList.entering {
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+.PictureList.exiting {
+  opacity: 0.3;
+  transform: scale(.75);
 }

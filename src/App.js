@@ -4,20 +4,27 @@ import grid from './grid.svg';
 import './App.css';
 import PictureList from './PictureList';
 
+const animationTimeout = 200;
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       orientation: 'portrait',
+      show: true,
     };
   }
 
   changeOrientation = () => {
-    this.setState((prevState) => ({
-      orientation: (prevState.orientation === 'portrait')
-        ? 'landscape'
-        : 'portrait',
-    }));
+    this.setState({show: false});
+    setTimeout(() => {
+      this.setState((prevState) => ({
+        show: true,
+        orientation: (prevState.orientation === 'portrait')
+          ? 'landscape'
+          : 'portrait',
+      }))}, animationTimeout
+    );
   };
 
   render() {
@@ -30,7 +37,10 @@ class App extends Component {
             <img src={grid} alt="Change orientation"/>
           </button>
         </header>
-        <PictureList orientation={this.state.orientation}/>
+        <PictureList orientation={this.state.orientation}
+                     show={this.state.show}
+                     timeout={animationTimeout}
+        />
       </div>
     );
   }

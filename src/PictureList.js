@@ -1,4 +1,5 @@
 import React from 'react';
+import Transition from 'react-transition-group/Transition';
 
 import './PictureList.css';
 import PictureItem from './PictureItem';
@@ -20,13 +21,12 @@ class PictureList extends React.Component {
     });
   }
 
-  // TODO: Do move getting data to parent App component?
   componentWillMount() {
     this.getPictures();
   }
 
   render() {
-    const { orientation } = this.props;
+    const { orientation, show, timeout } = this.props;
     const PictureCollection = this.state.pictures.map(
       ({ id, img, title, description }) => {
         return (
@@ -40,9 +40,13 @@ class PictureList extends React.Component {
     );
 
     return (
-      <div className={`PictureList ${orientation}`}>
-        {PictureCollection}
-      </div>
+      <Transition in={show} timeout={timeout}>
+        {(state) => (
+          <div className={`PictureList ${orientation} ${state}`}>
+            {PictureCollection}
+          </div>
+        )}
+      </Transition>
     );
   }
 }
