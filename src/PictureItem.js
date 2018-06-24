@@ -5,15 +5,13 @@ function PictureItem (props) {
   const itemClass = `PictureItem ${props.orientation}`;
 
   return (
-    <div className={itemClass}>
-      <div className="PictureItem-picture">
+    <figure className={itemClass}>
         <img src={props.image} alt="img" className="PictureItem-image"/>
-      </div>
       <div className="PictureItem-text">
         <h2 className="PictureItem-title">{props.title}</h2>
         <p className="PictureItem-description">{props.description}</p>
       </div>
-    </div>
+    </figure>
   )
 }
 

@@ -1,25 +1,25 @@
 .PictureItem {
   position: relative;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
   transition: 200ms ease;
 }
 .PictureItem:hover {
   box-shadow: 0 0 10px 2px var(--col-effect);
 }
-.PictureItem-picture {
-  overflow: hidden;
-  object-fit: contain;
-  flex: 1 0 50%;
-}
 .PictureItem-image {
+  overflow: hidden;
+  flex: 1 0 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .PictureItem-text {
-  background-color: var(--col-bg-item);
-  color: var(--col-font-item);
   flex: 0 1 25%;
+  color: var(--col-font-item);
+  background-color: var(--col-bg-item);
+  box-shadow: 0 0 .5rem .5rem var(--col-bg-item);
 }
 .PictureItem-title {
   font-size: 16px;
