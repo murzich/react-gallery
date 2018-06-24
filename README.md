@@ -1,5 +1,7 @@
+Preview result on [gh-pages](https://murzich.github.io/react-gallery).
+
 To start project run
-```yarn start``` or ```npm start```
+`yarn start` or `npm start`
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
